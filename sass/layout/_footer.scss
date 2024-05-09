@@ -6,11 +6,16 @@
 
   @include respond(tab-port) {
     padding: 8rem 0;
+    font-size: 1.3rem;
   }
 
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__logo {
@@ -69,6 +74,7 @@
     @include respond(tab-port) {
       width: 100%;
       float: none;
+      text-align: center;
     }
   }
 }
